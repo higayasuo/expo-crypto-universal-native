@@ -11,18 +11,26 @@ npm install expo-crypto-universal-native
 ## Usage
 
 ```typescript
-import { nativeCrypto } from 'expo-crypto-universal-native';
+import { nativeCryptoModule } from 'expo-crypto-universal-native';
 
 // Example usage
 const key = new Uint8Array(32); // 32-byte key
 const data = new Uint8Array([1, 2, 3, 4, 5]);
 
 // Encrypt data
-const encrypted = await nativeCrypto.aesEncryptAsync(data, key);
+const encrypted = await nativeCryptoModule.aesEncryptAsync(data, key);
 
 // Decrypt data
-const decrypted = await nativeCrypto.aesDecryptAsync(encrypted, key);
+const decrypted = await nativeCryptoModule.aesDecryptAsync(encrypted, key);
 ```
+
+## Features
+
+- AES-CBC encryption/decryption with HMAC authentication
+- Compatible with Node.js crypto implementation
+- Handles empty and large data
+- Secure against tampering (HMAC verification)
+- Random IV for each encryption
 
 ## Development
 
