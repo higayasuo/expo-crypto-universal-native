@@ -48,6 +48,6 @@
   },
   "dependencies": {
     "base64-js": "^1.5.1",
-    "expo-crypto-universal": "file:expo-crypto-universal-0.1.0.tgz"
+    "expo-crypto-universal": "^0.2.0"
   }
 }
