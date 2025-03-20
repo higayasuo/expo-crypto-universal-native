@@ -1,0 +1,29 @@
+# Source
+src/
+__tests__/
+
+# Config files
+.eslintrc*
+.prettierrc*
+.editorconfig
+.gitignore
+.npmignore
+tsconfig.json
+tsconfig.node.json
+vite.config.ts
+
+# Development
+.github/
+.vscode/
+.idea/
+*.log
+coverage/
+.nyc_output/
+
+# Misc
+.DS_Store
+.env*
+*.local
+
+# npm pack
+*.tgz
