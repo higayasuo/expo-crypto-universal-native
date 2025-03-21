@@ -1,6 +1,6 @@
 {
   "name": "expo-crypto-universal-native",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Native implementation of expo-crypto-universal",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -48,6 +48,6 @@
   },
   "dependencies": {
     "base64-js": "^1.5.1",
-    "expo-crypto-universal": "^0.2.0"
+    "expo-crypto-universal": "^0.2.1"
   }
 }
