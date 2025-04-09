@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.2.2] - 2025-04-09
+
+### Added
+
+- Added polyfillWebCrypto function to automatically polyfill Web Crypto API
+- Added getRandomValues implementation for Web Crypto API compatibility
+
+### Changed
+
+- Improved test coverage with comprehensive tests for all modules
+
 ## [0.2.1] - 2024-03-19
 
 ### Changed
