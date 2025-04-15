@@ -1,15 +1,17 @@
 # Changelog
 
-## [0.2.2] - 2025-04-09
+## [0.2.6] - 2025-04-15
 
 ### Added
 
-- Added polyfillWebCrypto function to automatically polyfill Web Crypto API
-- Added getRandomValues implementation for Web Crypto API compatibility
+- Added getRandomValues implementation using expo-crypto
+- Added SHA-256, SHA-384, and SHA-512 hashing implementations using expo-crypto
 
 ### Changed
 
 - Improved test coverage with comprehensive tests for all modules
+- Removed AES-CBC encryption/decryption functionality
+- Updated README.md with current API documentation
 
 ## [0.2.1] - 2024-03-19
 
