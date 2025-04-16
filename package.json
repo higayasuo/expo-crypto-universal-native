@@ -1,6 +1,6 @@
 {
   "name": "expo-crypto-universal-native",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "description": "Native implementation of expo-crypto-universal",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -46,6 +46,6 @@
   },
   "peerDependencies": {
     "expo-crypto": "~14.0.2",
-    "expo-crypto-universal": "^0.2.6"
+    "expo-crypto-universal": "^0.2.7"
   }
 }

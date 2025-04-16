@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.7] - 2025-04-16
+
+### Changed
+
+- Moved expo-crypto-universal from dependencies to peerDependencies and updated its version
+- Removed unused dependency on base64-js
+
 ## [0.2.6] - 2025-04-15
 
 ### Added
