@@ -8,20 +8,22 @@ vi.mock('expo-crypto', () => ({
   getRandomValues: vi.fn((array) => {
     return crypto.getRandomValues(array);
   }),
-  digest: vi.fn(async (algorithm: 'SHA-256' | 'SHA-384' | 'SHA-512', data) => {
-    // Return predictable hash values based on the algorithm
-    const hashLength = {
-      'SHA-256': 32,
-      'SHA-384': 48,
-      'SHA-512': 64,
-    }[algorithm];
+  digest: vi.fn(
+    async (algorithm: 'SHA-256' | 'SHA-384' | 'SHA-512', _data: Uint8Array) => {
+      // Return predictable hash values based on the algorithm
+      const hashLength = {
+        'SHA-256': 32,
+        'SHA-384': 48,
+        'SHA-512': 64,
+      }[algorithm];
 
-    const result = new Uint8Array(hashLength);
-    for (let i = 0; i < hashLength; i++) {
-      result[i] = i % 256;
-    }
-    return result;
-  }),
+      const result = new Uint8Array(hashLength);
+      for (let i = 0; i < hashLength; i++) {
+        result[i] = i % 256;
+      }
+      return result;
+    },
+  ),
   CryptoDigestAlgorithm: {
     SHA256: 'SHA-256',
     SHA384: 'SHA-384',
