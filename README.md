@@ -28,7 +28,7 @@ const filledArray = nativeCryptoModule.getRandomValues(new Uint8Array(32));
 
 ### `nativeCryptoModule.getRandomBytes(size: number): Uint8Array`
 
-Generates cryptographically secure random bytes of the specified size.
+Generates a new Uint8Array of the specified size, filled with cryptographically secure random values.
 
 ### `nativeCryptoModule.getRandomValues(array: Uint8Array): Uint8Array`
 

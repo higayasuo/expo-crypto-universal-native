@@ -18,3 +18,9 @@ export class NativeCryptoModule extends AbstractCryptoModule {
     return ExpoCrypto.getRandomValues(values);
   };
 }
+
+/**
+ * Pre-initialized instance of NativeCryptoModule for convenience.
+ * Provides direct access to cryptographic operations without needing to instantiate the class.
+ */
+export const nativeCryptoModule = new NativeCryptoModule();

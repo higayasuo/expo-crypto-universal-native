@@ -1,4 +1,4 @@
-import { describe, it, expect, vi, beforeEach } from 'vitest';
+import { describe, it, expect, vi } from 'vitest';
 import { NativeCryptoModule } from '../NativeCryptoModule';
 import * as ExpoCrypto from 'expo-crypto';
 import crypto from 'crypto';
